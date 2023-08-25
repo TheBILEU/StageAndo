@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERFIL_EMPRESA</title>
+
+<style>
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: sans-serif;
+    background: #1e1f22;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #01a090;
+    border-radius: 50px;
+    border: none;
+}
+
+.SA{
+   width: 20%;
+   position: relative;    
+}
+
+.main-reg{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-reg{
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background: #313338;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-reg > h1{
+    color: #fff;
+    font-weight: 800;
+    margin: 0;
+}
+
+.card-top {
+    justify-content: center;
+    display: flex;
+}
+
+.card-top div.textfield {
+    margin-right: 5px;
+}
+.card-top div.textfield .img{
+    width: 50%;
+    display: block;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 105px;
+    top: 30px;
+}
+
+.card-center {
+    justify-content: center;
+    display: flex;
+}
+
+.card-center div.textfield {
+    margin-right: 5px;
+}
+
+.card-center div.textfield .img{
+    width: 50%;
+    display: block;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 105px;
+    top: 30px;
+}
+
+.card-bottom {
+    justify-content: center;
+    display: flex;
+}
+
+.card-bottom div.textfield {
+    margin-right: 5px;
+}
+
+.textfield{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.link{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #292b30;
+    font-size: 12pt;
+    box-shadow: 0px 5px 5px -5px #311518;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+
+}
+
+.textfield > input::placeholder{
+    color: #311518;
+}
+
+
+.btn-reg{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 16px 0px;
+    margin: 10px auto 10px auto;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #24083c;
+    background: #03dac5;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px -5px #03dac5;
+}
+
+.btn-reg:hover{
+    background: #01a090;
+}
+
+.form-register{
+    display: flex;
+    margin-left: 250px;
+}
+
+.form-register img{
+    width: 60px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.form-register img:hover{
+    transform: scale(1.2);
+
+}
+
+.fdt{
+    color: #f0ffffde;
+    width: 680px;
+}
+
+.fiel-input{
+    margin-top: 2px;
+    margin-left: 20px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    background: #412854;
+    color: white;
+    font-size: 12pt;
+    box-shadow: 0px 1px 40px #412854;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-radio{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-center{
+    margin-left: 10px;
+     
+}
+
+.img-perfil {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.img-perfil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}  
+
+@media only screen and (max-width: 950px){
+    .card-reg{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .card-reg{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .SA{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .SA{
+        width: 90%;
+    }
+}   
+    </style>
+</head>
+<body>
+    <div class="main-reg">
+        <div class="card-reg">
+            <img class="SA" src="../img/logo-site.png" alt="">
+                <h1>PERFIL</h1>
+
+                <section class="img-perfil">
+                    <img src="../img/A-1.jpg" alt="">
+                    <button class="btn-reg">Alterar foto</button>
+                </section>
+                
+
+            <div class="fdt">
+                <div class="input-center">
+                                   
+                            <div class="card-top">  
+                                <div class="textfield">             
+                                    <input type="text" placeholder="Alterar nome da empresa">
+                                    <br>
+                                    <input type="text" placeholder="Alterar telefone">
+                                    <br>
+                                    <input type="text" placeholder="Email">
+                                    <button class="btn-reg">Modificar localização</button>
+                                </div>
+                            </div>
+
+                            <div class="form-register">
+                                <a href="">
+                                    <img src="../img/facebook.png" alt="facebookLogo">
+                                </a>
+            
+                                <a href="">
+                                    <img src="../img/google.png" alt="googleLogo">
+                                </a>
+            
+                                <a href="">
+                                    <img src="../img/linkedin.png" alt="linkedinLogo">
+                                </a>
+            
+                            </div>
+                
+                </div>
+            </div>
+            
+            <button class="btn-reg">APLICAR</button>
+             
+</body>
+</html>
